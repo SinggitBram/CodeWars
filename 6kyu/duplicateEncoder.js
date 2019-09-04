@@ -16,7 +16,7 @@ function duplicateEncode(word) {
         }
         if (benar > 1) {
             hasil += ')'
-        } else{
+        } else {
             hasil += '('
         }
     }
