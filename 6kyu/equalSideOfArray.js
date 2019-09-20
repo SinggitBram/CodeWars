@@ -21,15 +21,13 @@
 // Index 0 is the place where the left side and right side are equal.
 
 function findEvenIndex(arr) {
-
     for (let j = 0; j < arr.length; j++) {
-        if (penjumlahan(arr.slice(0, j)) === penjumlahan(arr.slice(j+1, arr.length))) {
+        if (penjumlahan(arr.slice(0, j)) === penjumlahan(arr.slice(j + 1, arr.length))) {
             return j
         }
     }
     return -1
 }
-
 function penjumlahan(angka) {
     let jumlah = 0
     if (!angka) {
