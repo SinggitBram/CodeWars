@@ -12,15 +12,19 @@ function deleteNth(arr, n) {
                 counter++
             }
             if (counter > n) {
-                arr.splice([j], 1)
-                i++
-                j++
+                arr[j] = ''
+                counter--
             }
+        }
+    }
+    for (let k = arr.length - 1; k > 0; k--) {
+        if (arr[k] === '') {
+            arr.splice(k, 1)
         }
     }
     return arr
 }
 
-
 console.log(deleteNth([20,37,20,21], 1))//, [20,37,21])
-console.log(deleteNth([1,1,3,3,7,2,2,2,2,2,1,3,3,1,2,7,7], 3))//, [1, 1, 3, 3, 7, 2, 2, 2])
+console.log(deleteNth([1,1,3,3,7,2,2,2,2,2,1,3,3,1,2,7,7], 3))//, [1, 1, 3, 3, 7, 2, 2, 2, 1, 3, 7, 7])
+
