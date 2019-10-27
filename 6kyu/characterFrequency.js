@@ -19,11 +19,7 @@ function letterFrequency(text) {
     hasil.sort(function (a, b) {
         return b[1] - a[1]
     })
-    for(let j = 0 ; j< hasil.length;j++){
-        for(let k = 0 ; k< hasil[j].length;k++){
-            if (hasil[j][1] === hasil[j])
-        }
-    }
+    return hasil
 }
 
     console.log(letterFrequency('wklv lv d vhfuhw phvvdjh'))
