@@ -8,6 +8,8 @@ function findSequences(n) {
             if (jumlah(temp) === n) {
                 hasil.push(temp)
                 break
+            } else if (jumlah(temp) > n) {
+                break
             }
         }
     }
@@ -23,7 +25,7 @@ function findSequences(n) {
     hasil.sort(function (a, b) {
         return a.length - b.length
     })
-    
+
     return hasil
 }
 
